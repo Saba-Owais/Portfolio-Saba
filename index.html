@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://media.twiliocdn.com/sdk/js/chat/v5.5/twilio-chat.min.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Saba
+            <span>Owais</span></a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+
+            
+
+            <button id="white-theme"></button>     
+            <button id="black-theme" class="color-btn" style="--color: black;"></button>
+            <button id="blue-theme" class="color-btn" style="--color: #d21111bd;"></button>
+            <button id="green-theme" class="color-btn" style="--color: #d41688de;"></button>
+            <button id="purple-theme" class="color-btn" style="--color: #0aaa7765;"></button>
+            <button id="orange-theme" class="color-btn" style="--color: #e67e22;"></button>
+
+        </nav>
+</header>
+ <section class="home" id="home">a
+    <div class="home-content">
+        <h1>Hi,Its <span>Saba</span></h1>
+        <h3 class="text-animation">I'm a <span></span></h3>
+        <p>Hey, I'm Saba Owais,an Ambitious Developer | HTML, CSS, JavaScript | Exploring TypeScript, Python | Next.js, React.js | Generative AI, Meraverse, Web 3.0, an experienced professional with a diverse background in the banking and pharmaceutical industries.Currently am a Human Resource Manager at Sanofi Pharmaceutical Company
+            .</p>
+
+            
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/saba-owais-79a63a293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://github.com/Saba-Owais"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.instagram.com/sabaowais2023?igsh=MXMzaDI0bDk3bDB4dw=="><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100085188048935&mibextid=ZbWKwL"><i class='bx bxl-facebook-square' ></i></a>
+        </div>
+        <div class="btn-group">
+            <a href="" class="btn">Hire</a>
+            <a
+            class="btn" onclick="sendMessage()">Contact</a>
+        </div>
+    </div>
+        <div class="home-image">
+            <img src="image 001.jpeg" alt="">
+        </div>   
+ </section>
+ <section class="education" id="education">
+    <h2 class="heading">Education</h2>
+    <div class="timeline-items">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+                <div class="timeline-date">2006</div>
+                    <div class="timeline-content">
+                        <h3>Practical Schooling System</h3>
+                        <p>Practical Schooling System is a project of Practical Centre which is considered among the leading educational institutes in the city and has been serving the citizens of Karachi since 1980. Since its inception, P.S.S. has carved its own niche by imparting quality education along with some highly productive co-curricular activities.</p>
+
+                    </div>
+            
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+                <div class="timeline-date">2008</div>
+                    <div class="timeline-content">
+                        <h3>Gulshan Degree Science College</h3>
+                        <p>The Gulshan Degree College is one of the most famous colleges of Karachi, Pakistan. It is located in the heart of the city, near the Stadium Road Of Karachi </p>
+
+                    </div>
+            
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+                <div class="timeline-date">2018</div>
+                    <div class="timeline-content">
+                        <h3>Karachi university</h3>
+                        <p>Karachi University, officially known as the University of Karachi (UoK), is one of Pakistan's largest and most prestigious universities, founded in 1951. Located in Karachi, it offers a wide range of undergraduate, graduate, and doctoral programs across various disciplines. Known for its strong emphasis on research, UoK houses several renowned research centers and serves a diverse student body with extensive facilities. The university has produced numerous notable alumni contributing significantly in various fields.
+
+                    </p>
+
+                    </div>
+            
+        </div>
+    </div> 
+
+    
+ </section>
+ <section class="services" id="services">
+    <h2 class="heading">Services</h2>
+    <div class="service-container">
+    <div class="service-box">
+        <div class="service-info">
+            <h4>Web Developer</h4>
+            <p>As a web developer, I provide a range of services to meet diverse needs. Firstly, I specialize in website development, where I create custom websites from scratch, ensuring they are not only visually appealing but also highly functional and responsive across various devices. Secondly, I offer frontend design services, focusing on creating intuitive user interfaces that enhance the overall user experience. Additionally, I provide website optimization services, where I fine-tune websites to improve performance, speed, and search engine visibility, ultimately helping businesses reach their online goals more effectively.
+
+        </p>
+
+        </div>
+    </div>
+    <div class="service-box">
+        <div class="service-info">
+            <h4>Graphic Designer</h4>
+            <p>As a graphic designer, I offer a range of services including logo design, branding, and marketing materials such as brochures and business cards. I specialize in creating visually compelling graphics for both print and digital media, ensuring cohesive and professional visual communication. My goal is to enhance brand identity and engage audiences through creative and impactful design.
+
+         </p>
+
+        </div>
+    </div>
+    <div class="service-box">
+        <div class="service-info">
+            <h4>Digital Marketer</h4>
+            <p>As a digital marketer, I offer services including social media management, search engine optimization (SEO), and pay-per-click (PPC) advertising. I also provide content creation, email marketing, and analytics to optimize campaigns and drive business growth. My goal is to enhance online visibility, engage target audiences, and boost conversions.
+
+         </p>
+
+        </div>
+    </div>
+    <div class="service-box">
+        <div class="service-info">
+            <h4>Content Writer</h4>
+            <p>As a content writer, I specialize in creating engaging and compelling narratives that resonate with diverse audiences. With a keen understanding of SEO principles and content marketing strategies, I craft tailored content that drives traffic, increases engagement, and boosts brand awareness. </p>
+
+        </div>
+    </div>
+    
+</div>
+</section>
+<section class="testimonials" id="testimonials">
+    <div class="testimonials-box">
+        <h2 class="heading">Testimonials</h2>
+        <div class="wrapper">
+            <div class="testimonial-item">
+                <img src="image-3.jpg" alt="">
+                <h2>Omerullah Ansari</h2>
+            <div class="rating">
+                <i class='bx bxs-star'id="star"></i>
+                <i class='bx bxs-star'id="star"></i>
+                <i class='bx bxs-star'id="star"></i>
+                <i class='bx bxs-star'id="star"></i>
+                <i class='bx bxs-star'id="star"></i>
+                </div>
+                <p>"I had the pleasure of working with Saba on a Web development project, and I must say, I am thoroughly impressed. Saba demonstrated exceptional expertise in Web development, delivering solutions that exceeded our expectations.</p>
+            </div>
+            <div class="testimonial-item">
+        <img src="image-4.jpg" alt="">
+        <h2>Kashan Aqil</h2>
+    <div class="rating">
+        <i class='bx bxs-star'id="star"></i>
+        <i class='bx bxs-star'id="star"></i>
+        <i class='bx bxs-star'id="star"></i>
+        <i class='bx bxs-star'id="star"></i>
+        <i class='bx bxs-star'id="star"></i>
+        </div>
+        <p>"I had the pleasure of collaborating with Saba Owais on several content writing projects, and I couldn't be happier with the results. Saba's creativity and attention to detail shine through in every piece she produces. Her ability to capture the essence of our brand and convey our message effectively is unparalleled. Working with Saba has elevated our content strategy to new heights, and I look forward to many more successful collaborations."
+
+      </div>
+      <div class="testimonial-item">
+        <img src="image-6.jpg" alt="">
+        <h2>Syed Ammar Hussain</h2>
+    <div class="rating">
+        <i class='bx bxs-star'id="star"></i>
+        <i class='bx bxs-star'id="star"></i>
+        <i class='bx bxs-star'id="star"></i>
+        <i class='bx bxs-star'id="star"></i>
+        <i class='bx bxs-star'id="star"></i>
+        </div>
+        <p>"I had the pleasure of collaborating with Saba Owais on several web development projects, and I couldn't be more impressed. Saba's expertise in HTML, JavaScript, and Python is exceptional, delivering high-quality, efficient, and visually stunning websites. Her ability to turn complex requirements into user-friendly solutions has greatly enhanced our online presence."</p>
+    </div>
+           
+</div>
+   </div>
+    </section>
+    
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>me</span>
+    </h2>
+    <form action="https://formspree.io/f/xpzvoagd" method="POST">
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email" name="email">
+            </div>
+        <div class="input-box">
+            <input type="number" placeholder="Number">
+            <!-- <input type="text" placeholder="Subject"> -->
+        </div>
+
+        </div>
+        <div class="input-group-2">
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" ></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </div>
+    </form>
+</section>
+
+
+        <!-- ---- RECENT WORK HTML ---------  -->
+        <section class="work section" id="work">
+            <h2 data-heading="My Portfolio" class="section-title">Recent Work</h2>
+
+            <div class="work-filters">
+                <span class="work-item active-work">All</span>
+                <span class="work-item">Web</span>
+                <span class="work-item">App</span>
+                <span class="work-item">Design</span>
+            </div>
+
+            <div class="work-container container grid">
+                <div class="work-card">
+                    <img src="work-1.webp" alt="" class="work-img">
+                    <h3 class="work-title">Web Deign</h3>
+                    <span class="work-button">Demo <i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-detail">
+                        <h3 class="details-title">The services provide for design.</h3>
+                        <p class="detail-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus
+                            commodi laborum fugiat!</p>
+                        <ul class="detail-info">
+                            <li>Created - <span>4 dec 2023</span></li>
+                            <li>Technologies - <span>HTML & CSS</span></li>
+                            <li>Role - <span>Frontend Developer</span></li>
+                            <li>View - <span><a href="https://github.com/Saba-Owais">My Github</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <img src="work-2.webp" alt="" class="work-img">
+                    <h3 class="work-title">App Design</h3>
+                    <span class="work-button">Demo <i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-detail">
+                        <h3 class="details-title">Mobile app landing design & app maintain.</h3>
+                        <p class="detail-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus
+                            commodi laborum fugiat!</p>
+                        <ul class="detail-info">
+                            <li>Created - <span>4 dec 2023</span></li>
+                            <li>Technologies - <span>HTML & CSS</span></li>
+                            <li>Role - <span>Frontend Developer</span></li>
+                            <li>View - <span><a href="https://github.com/Saba-Owais">My Github</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <img src="work-3.webp" alt="" class="work-img">
+                    <h3 class="work-title">Brand Design</h3>
+                    <span class="work-button">Demo <i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-detail">
+                        <h3 class="details-title">Logo design creativity & website</h3>
+                        <p class="detail-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus
+                            commodi laborum fugiat!</p>
+                        <ul class="detail-info">
+                            <li>Created - <span>4 dec 2023</span></li>
+                            <li>Technologies - <span>HTML & CSS</span></li>
+                            <li>Role - <span>Frontend Developer</span></li>
+                            <li>View - <span><a href="https://github.com/Saba-Owais">My Github</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <img src="work-4.webp" alt="" class="work-img">
+                    <h3 class="work-title">App Design</h3>
+                    <span class="work-button">Demo <i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-detail">
+                        <h3 class="details-title">Mobile app landing design & Services</h3>
+                        <p class="detail-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus
+                            commodi laborum fugiat!</p>
+                        <ul class="detail-info">
+                            <li>Created - <span>4 dec 2023</span></li>
+                            <li>Technologies - <span>HTML & CSS</span></li>
+                            <li>Role - <span>Frontend Developer</span></li>
+                            <li>View - <span><a href="https://github.com/Saba-Owais">My Github</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <img src="work-5.webp" alt="" class="work-img">
+                    <h3 class="work-title">Brand Design</h3>
+                    <span class="work-button">Demo <i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-detail">
+                        <h3 class="details-title">Design for technology & services</h3>
+                        <p class="detail-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus
+                            commodi laborum fugiat!</p>
+                        <ul class="detail-info">
+                            <li>Created - <span>4 dec 2023</span></li>
+                            <li>Technologies - <span>HTML & CSS</span></li>
+                            <li>Role - <span>Frontend Developer</span></li>
+                            <li>View - <span><a href="https://github.com/Saba-Owais">My Github</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <img src="work-6.webp" alt="" class="work-img">
+                    <h3 class="work-title">Web Design</h3>
+                    <span class="work-button">Demo <i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-detail">
+                        <h3 class="details-title">Website for technology & services</h3>
+                        <p class="detail-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus
+                            commodi laborum fugiat!</p>
+                        <ul class="detail-info">
+                            <li>Created - <span>4 dec 2023</span></li>
+                            <li>Technologies - <span>HTML & CSS</span></li>
+                            <li>Role - <span>Frontend Developer</span></li>
+                            <li>View - <span><a href="https://github.com/Saba-Owais">My Github</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+<footer class="footer">
+    <div class="social">
+        <a href="https://www.linkedin.com/in/saba-owais-79a63a293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin' ></i></a>
+        <a href="https://github.com/"><i class='bx bxl-github' ></i></a>
+        <a href="https://www.instagram.com/sabaowais2023?igsh=MXMzaDI0bDk3bDB4dw=="><i class='bx bxl-instagram-alt' ></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100085188048935&mibextid=ZbWKwL"><i class='bx bxl-facebook-square' ></i></a>
+    </div>
+    <ul class="list">
+        <li>
+            <a href="#">FAQ</a>
+        </li>
+        <li>
+            <a href="#">Services</a>
+        </li>
+        <li>
+            <a href="#">About ME</a>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+        <li>
+            <a href="#">Testimonials</a>
+        </li>
+    </ul>
+    <p class="copyright">
+        © Saba Owais || All Rights Reserved
+    </p>
+</footer>
+
+
+
+    <script src="script.js"></script>
+    <script>
+        function sendMessage() {
+            const phoneNumber = '923322573961'; // Replace with your WhatsApp number
+            window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}`, '_blank');
+        }
+    </script>
+</body>
+</html>
